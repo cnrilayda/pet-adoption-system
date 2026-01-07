@@ -1,0 +1,59 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+
+# Visual Studio
+.vs/
+*.sln.docstates
+
+# User-specific files
+*.rsuser
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Sensitive configuration files
+PetAdoptionPlatform.API/appsettings.Development.json
+**/appsettings.Development.json
+**/appsettings.Production.json
+
+# Uploads directory (contains user-uploaded files)
+PetAdoptionPlatform.API/uploads/
+
+# Environment variables
+.env
+.env.local
+
+# Docker override files
+docker-compose.override.yml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+

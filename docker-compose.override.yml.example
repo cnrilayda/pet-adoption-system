@@ -1,0 +1,15 @@
+# Bu dosyayı docker-compose.override.yml olarak kopyalayıp şifreyi değiştirebilirsiniz
+# docker-compose.override.yml git'e commit edilmez (varsayılan olarak)
+
+version: '3.8'
+
+services:
+  sqlserver:
+    environment:
+      - SA_PASSWORD=YourCustomPassword123
+
+
+
+
+
+

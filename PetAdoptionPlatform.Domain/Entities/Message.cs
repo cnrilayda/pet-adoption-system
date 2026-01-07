@@ -1,0 +1,17 @@
+namespace PetAdoptionPlatform.Domain.Entities;
+
+public class Message : BaseEntity
+{
+    public Guid ApplicationId { get; set; }
+    public Guid SenderId { get; set; }
+    public Guid ReceiverId { get; set; }
+    public string Content { get; set; } = string.Empty;
+    public bool IsRead { get; set; } = false;
+    public DateTime? ReadAt { get; set; }
+    
+    // Navigation properties
+    public virtual AdoptionApplication Application { get; set; } = null!;
+    public virtual User Sender { get; set; } = null!;
+    public virtual User Receiver { get; set; } = null!;
+}
+
